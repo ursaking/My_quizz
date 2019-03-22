@@ -1,0 +1,21 @@
+#index:
+#    path: /
+#    controller: App\Controller\DefaultController::index
+index:
+    path: /
+    controller: App\Controller\IndexController::number
+films:
+    path: /index/{id}
+    controller: App\Controller\IndexController::quizz
+question:
+    path: /index/quizz/{id}
+    controller: App\Controller\IndexController::question
+register:
+    path: /register
+    controller: App\Controller\RegistrationController::register
+login:
+    path: /login
+    controller: App\Controller\RegistrationController::login
+logout:
+    path: /logout
+    controller: App\Controller\RegistrationController::logout

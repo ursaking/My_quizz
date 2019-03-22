@@ -1,0 +1,7 @@
+{% extends 'base.html.twig' %}
+{% block body %}
+    {% for item in categorie %}
+        <img src={{item.image}} height="100" width="100">
+        <a href="index/{{ item.id }}">{{ item.name }}</a>
+    {% endfor %}
+{% endblock %}
